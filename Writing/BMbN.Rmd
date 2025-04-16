@@ -1,0 +1,114 @@
+---
+title: "Maine Brownfields by the Numbers"
+author: "Taylor Lange"
+date: "`r Sys.Date()`"
+output: pdf_document
+bibliography: BMbNbib.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction
+
+Blah Blah Blah Brownfields [@De_Sousa_2021].
+
+# Maine's Brownfield Process
+
+Maine's Department of Environmental Protection has jurisdiction over the administration of brownfield redevelopment in the state [@MDEP_BF_2018].
+
+## Redevelopment Funding
+
+### Non-Governmental Financing
+
+__Debt-based Financing__
+
+__NGO Foundation Grants__ Many Non-governmental funding organizations exist that can provide communities with redevelopment funds. For example, the Maine Development Foundation, a prominant private foundation that provides communities with workforce development and economic development funding, 
+
+### EPA Funding. 
+
+The U.S. EPA has multiple separate categories of funding that support brownfields redevelopment including Targeted Brownfields Assessments, 128a State and Tribal Non-competitive Grants, the competitive grants program, and Brownfields Revolving Loan Funds [@EPA_levbook_2016].  
+  
+__Targeted Brownfields Assessments (TAB)__ - In the event that communities have a potential brownfield that requires assessing but no state or regional funds are currently available, the EPA will pay for an assessment directly in the form of Targeted Brownfields Assessments, or TABs. TAB funds are controlled by EPA regional offices and are paid directly to QEPs for either Phase I or Phase II assessments. 
+
+__128a State & Tribal Non-competitive Grants__ - CERCLA Section 128(a) provides a funding mechanism for EPA to provide states, territories, and federally recognized tribes with non-competitive funding for state response programs [@EPA_128a_2022]. 
+
+__Competitive Grants__ -  
+
+__Brownfields Revolving Loan Funds__ -
+
+### Other Federal Funding
+
+A number of U.S. federal agencies supply funding for economic development, and EPA funds are often leveraged to secure redevelopment funding from these sources as well [@EPA_levweb_2016]. These sources include:
+
+__U.S. Housing & Urban Development__ -  
+
+__U.S. Economic Development Administration__ -  
+
+__U.S. Department of Agriculture__ -  
+
+
+### State Funding
+
+
+# Data Sources
+
+__United States EPA__ – Data on brownfields sites where the EPA has contributed to assessment, cleanup, or redevelopment is stored in the Assessment, Cleanup and Redevelopment Exchange System^[https://www.epa.gov/brownfields/acres-frequently-asked-questions]  (ACRES) database, which is maintained by EPA’s Office of Brownfields and Land Revitalization (OBLR). Grantees who receive any funds from OBLR are required to report expenditures, assessment results, and other property information through ACRES. Data from ACRES is made public twice per year through EPA’s Cleanups in My Community^[https://www.epa.gov/cleanups/cleanups-my-community] (CIMC) tool. A bulk download from the ACRES database was requested from OBLR for all Brownfield sites in Maine, to circumvent the need to scrape property information from individual property pages. This data was provided on June 20th 2024. The data recieved contained information on all cooperative agreements and grants attributable to work done on a property including the amount of funding attributable to the property per grant, the purpose of each grant (assessment, clean up, supplemental, etc.), contaminants found during assessment, and amount leveraged per property. I refer to this data as "ACRES data" for the remainder of the report.  
+  
+__Maine DEP__ The MDEP maintains a vast array of databases, including those on air and water quality and land remediation sites. I pull data from two of these sources:  
+
+* _Remediation Sites (Institutional Controls) Database_^[https://maine.maps.arcgis.com/apps/webappviewer/index.html?id=666a7a20993e43edaf1b6bbdc749d054 - Note: This linked geodatabase is updated weekly and may include sites not included in this report as of publication] – A geodatabase of remediation sites in Maine. It includes uncontrolled sites, voluntary response action program sites, and brownfields sites. This database was accessed on March 19th 2025.  
+*	_Division of Remediation Site List_^[https://www.maine.gov/dep/gis/datamaps/brwm_remediation_sites/rpt_rem_site_list.pdf - Note: This list is updated weekly and may include sites not included in this report as of publication] – PDF list of all sites.  
+
+The _Division of Remediation Site list_ was accessed in addition to the RSD because some of the sites were not included in the geodatabase.  
+  
+__North American Industry Classification System (NAICS)__ – Using descriptions of former property uses provided by grantees,all former property uses were classified using 2022 NAICS classifications, resulting in a past use industry profile for each property. NAICS codes were found on the U.S. Census Bureau's website^[https://www.census.gov/naics/] and the NAICS association website^[http://naics.com/]. If former use descriptions were inconclusive, town and regional planning websites were consulted or previous grantees were contacted to aquire any Phase I PSAs. In the event past uses remained elusive or it was found that the property was previously a single-family residential property or undeveloped land, the property as “Unknown”, “residential property”, or “undeveloped land”, respectively.
+
+
+  
+## Data Cleaning and Final Data set
+
+* _urban_ - Brownfields are classified as "urban" if they are located within a geographic area designated as urban by the U.S. Census Bureau according to the 2020 Dicennial Census.^[Urban boundary files were retrieved on from https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html#list-tab-790442341 on 03/26/2025]
+
+
+
+# Program Characteristics by the Numbers
+
+## Androscoggin
+
+## Aroostook
+
+## Cumberland
+
+## Franklin
+
+## Hancock
+
+## Kennebec
+
+## Knox
+
+## Lincoln
+
+## Oxford
+
+## Penobscott
+
+## Piscataquis
+
+## Sagadahoc
+
+## Somerset
+
+## Waldo
+
+## Washington
+
+## York
+
+# Tribal Brownfields
+
+# References
+
+
